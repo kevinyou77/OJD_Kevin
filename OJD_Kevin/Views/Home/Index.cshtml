@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+    ViewBag.Title = "Home";
+}
+
+<style>
+
+
+    .login__box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid lightblue;
+        height: 50%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__field {
+        margin-bottom: 20px;
+        border: 1px solid lightblue;
+    }
+</style>
+
+    <div class="login__box">
+        <h2 class="login__header">
+            Binus
+        </h2>
+
+        <span>
+            Binus Project Management
+        </span>
+        <h3 class="form">
+            <input type="text" placeholder="Username" value="" class="form__field" />
+            <input type="password" value="" placeholder="Password" class="form__field" />
+            <input type="submit" value="submit" />
+        </h3>
+    </div>

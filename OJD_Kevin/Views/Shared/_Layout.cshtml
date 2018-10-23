@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        .container__menu {
+            min-height: 100vh;
+            width: 100vw;
+        }
+
+            *,
+            *::before,
+            *::after {
+                padding: 0;
+                margin: 0;
+                box-sizing: inherit;
+            }
+
+            body {
+                box-sizing: border-box;
+            }
+
+            .project__header {
+                display: flex;
+                flex-direction: column;
+                background-color: lightblue;
+                min-height: 20vh;
+                width: 100%;
+            }
+
+            .project__welcome {
+                text-align: center;
+                flex: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .project__section {
+                display: flex
+            }
+
+            .link__primary {
+                margin-right: 20px;
+            }
+
+            .header__primary {
+                font-size: 50px;
+            }
+
+            .project__logout {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .link__primary {
+                font-size:20px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container__main">
+        <div class="project__header">
+            <div class="project__logout">
+                <a href="" class="link__primary">Logout</a>
+            </div>
+
+            <div class="project__welcome">
+                <div class="header__primary">
+                    Welcome, Username
+                </div>
+            </div>
+
+            <div class="projects__section">
+                <a href="#" class="link__primary">Projects</a>
+                <a href="#" class="link__primary">User Management</a>
+            </div>
+        </div>
+
+        @RenderBody()
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

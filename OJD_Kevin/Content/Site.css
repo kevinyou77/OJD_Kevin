@@ -1,0 +1,54 @@
+﻿
+.header__secondary {
+    display:inline-block;
+}
+
+.projects {
+    min-width: 100vw;
+    min-height: 30vh;
+}
+
+.projects__titlebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link__primary {
+    display: inline-block;
+}
+
+
+.container__usermanagement {
+    display: flex;
+}
+
+.sprint {
+    display: flex;
+    flex-direction: column;
+    flex: 20%;
+}
+
+.sprint__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.works {
+    flex: 80%;
+}
+
+.works__masteritem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works__subitem--content {
+    display: flex;
+    justify-content: space-between;
+}
